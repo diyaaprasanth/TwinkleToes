@@ -1,0 +1,52 @@
+LblTxt:
+
+<LblTxt>:
+
+    orientation: 'vertical'
+    lblTxtIn1: 'First Name :'
+    lblTxtIn2: 'Last Name : '
+    lblTxtIn3: 'Code : '
+    firstName_input: iAmFirstName
+    lastName_input: iAmLastName
+    code_input: iAmCode
+
+    Label:
+        text: root.lblTxtIn1
+    TextInput:
+        id: iAmFirstName
+        text: 'First Name'
+
+    Label:
+        text: root.lblTxtIn2
+    TextInput:
+        id: iAmLastName
+        text: 'Last Name'
+
+    Label:
+        text: root.lblTxtIn3
+    TextInput:
+        id: iAmCode
+        text: 'Code'
+    Button:
+        text: 'Submit'   
+        on_press: root.submit_form()
+
+
+<MyLayout@BoxLayout>:
+    orientation: 'vertical'
+    LblTxt:
+        text: 'First Name:'
+    TextInput:
+        id: firstName_input
+    LblTxt:
+        text: 'Last Name:'
+    TextInput:
+        id: lastName_input
+    LblTxt:
+        text: 'Code:'
+    TextInput:
+        id: code_input
+
+
+
+
